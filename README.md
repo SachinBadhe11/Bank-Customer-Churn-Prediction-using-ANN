@@ -1,98 +1,71 @@
-# Bank-Customer-Churn-Prediction-using-ANN
+Bank Customer Churn Prediction using Artificial Neural Networks
 
-This repository contains a Jupyter Notebook for predicting customer churn using machine learning techniques. The analysis focuses on identifying customers likely to churn and exploring key factors contributing to churn.
+This repository implements a machine learning pipeline to predict customer churn using Artificial Neural Networks (ANNs). The project focuses on identifying customers at risk of churning and uncovering key factors that contribute to churn.
 
 Features
 
-Exploratory Data Analysis (EDA): Understand the data with visualizations and descriptive statistics.
-
-Feature Engineering: Create relevant features to improve model accuracy.
-
-Machine Learning Models: Build and evaluate models like Logistic Regression, Random Forest, and XGBoost.
-
-Customer Insights: Identify significant factors influencing customer churn.
-
+Comprehensive Exploratory Data Analysis (EDA): Gain insights into the data through visualizations and descriptive statistics.
+Feature Engineering: Create new features to enhance model performance.
+Machine Learning Models: Develop and evaluate ANNs for customer churn prediction.
+Customer Churn Insights: Identify the most significant factors influencing customer churn.
 Getting Started
 
 Prerequisites
 
 Python 3.8 or higher
-
-Libraries:
+Required Libraries
 
 pandas
-
 numpy
-
 matplotlib
-
 seaborn
+tensorflow # Deep learning framework for ANNs
+scikit-learn # For data preprocessing and model evaluation
+Running the Project
 
-scikit-learn
-
-xgboost
-
-Running the Notebook on Google Colab
+Option 1: Google Colab
 
 Upload the Bank_Customer_Churn.ipynb notebook to your Google Drive.
 
 Open Google Colab and import the notebook from your Drive.
 
-Install any missing dependencies using the following commands in Colab:
+Install missing dependencies using the following command:
 
-!pip install pandas numpy matplotlib seaborn scikit-learn xgboost
+Bash
 
-Follow the step-by-step cells in the notebook to run the analysis and predictions.
+!pip install pandas numpy matplotlib seaborn tensorflow scikit-learn
+Follow the step-by-step instructions in the notebook to execute the analysis and predictions.
 
-Running Locally
+Option 2: Local Machine
 
-Clone the repository:
+Install required dependencies:
 
-git clone https://github.com/yourusername/bank-customer-churn.git
-cd bank-customer-churn
-
-Install dependencies:
+Bash
 
 pip install -r requirements.txt
+Open the notebook in Jupyter Notebook or your preferred IDE and run the cells.
 
-Open the notebook in Jupyter or VSCode and execute the cells.
+Bash
 
 jupyter notebook Bank_Customer_Churn.ipynb
+Project Usage
 
-Usage
-
-Data Loading: Ensure the dataset is available in the specified path.
-
-EDA: Explore the data distributions, correlations, and missing values.
-
-Feature Engineering: Generate derived features and preprocess the data.
-
-Model Training: Train various machine learning models and evaluate their performance.
-
-Prediction: Use the trained model to predict churn on new customer data.
-
-Results
-
-Metrics:
-
-Accuracy
-
-Precision
-
-Recall
-
-F1-Score
-
-Feature Importance:
-Visualizations highlighting the most significant features impacting churn.
-
+Data Loading: Ensure the customer churn dataset is available in the specified path.
+Exploratory Data Analysis: Explore data distributions, correlations, and missing values.
+Feature Engineering: Generate new features and preprocess the data for machine learning.
+Model Training: Train various ANN architectures and evaluate their performance using metrics like accuracy, precision, recall, and F1-score.
+Prediction: Utilize the trained model to predict churn probabilities for new customer data.
+Results Analysis: Analyze the model's performance metrics and identify the most important features impacting churn through visualizations.
 Repository Structure
 
-|-- Bank_Customer_Churn.ipynb  # Main notebook
-|-- README.md                  # Project documentation
-|-- requirements.txt           # Required Python packages
-|-- data/                      # Folder to store datasets
-
+Bank_Customer_Churn/
+├── Bank_Customer_Churn.ipynb        # Main Jupyter notebook
+├── README.md                         # Project documentation
+├── requirements.txt                  # Required Python packages
+├── data/                             # Folder to store datasets (if applicable)
+├── models/                           # Optional folder to store trained models
+├── utils/                            # Optional folder for utility functions
+└── ...                               # Additional project-specific folders
 Contributing
 
-Contributions are welcome! Feel free to submit issues or pull requests for improvements or bug fixes.
+We welcome contributions to this project! Feel free to submit pull requests for improvements, bug fixes, or new functionalities. Please ensure your code adheres to PEP 8 style guidelines and includes unit tests.
